@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en"> 
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+	<title>Infinity Lottery</title>
+   
+	 <link rel="stylesheet" href="css/main.css"> 
+	 <link rel="stylesheet" href="css/w3.css">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		
+</head>
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+	<header> 
+		<div class="header-logo">
+			<a href="index.html">Infinity</a>
+		</div> 
+    </header>
+    
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+
+              <ul class="nav navbar-nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#play">Play</a></li>
+				<li><a href="#FAQ">FAQ</a></li>
+				<li><a href="#contact">Contact Us</a></li>
+				
+              </ul>
+
+    </nav>
+<section id="home">
+				<p class="blinking" style="padding-left:425px;padding-top:320px;font-size: 50px;">Welcome to Infinity</p>
+				<a href="https://www.facebook.com/" class="fa fa-facebook" style="position: absolute; right: 0;"></a><br><br><br>
+				<a href="https://www.google.co.in/" class="fa fa-google" style="position: absolute; right: 0; "></a><br><br><br>
+				<a href="https://www.youtube.com/" class="fa fa-youtube" style="position: absolute; right: 0;"></a><br><br><br>
+				<a href="https://www.lipsum.com/" class="fa fa-instagram" style="position: absolute; right: 0;"></a><br><br><br>
+</section>
+
+<section id="play">
+	<div class="w3-container">
+	<div class="container bg-dark">
+	<div class="row">
+	<div class="col-lg-6">
+			<h1>Let's Try Your Luck</h1>
+			<p>Select any one of the Tickets:</p>
+	</div>
+	</div>
+	</div>               
+	<div class="w3-bar" style="height:100px; padding-left:70px;">
+			<button onclick="myFunction()" id="100" class="w3-bar-item w3-button w3-red" style="width:30%">100 KWEI</button>
+			<button onclick="myFunction1()" id="200" class="w3-bar-item w3-button w3-teal" style="width:30%">200 KWEI</button>
+			<button onclick="myFunction2()" id="300" class="w3-bar-item w3-button w3-red" style="width:30%">300 KWEI</button>
+	</div>
+	
+
+<script>
+	document.getElementById("100").addEventListener("click", myFunction);
+	function myFunction() {
+		document.getElementById('100').innerHTML = "Ticket Bought";
+		document.getElementById('100').disabled = true;
+	}
+
+	document.getElementById("200").addEventListener("click", myFunction1);
+	function myFunction1() {
+		document.getElementById('200').innerHTML = "Ticket Bought";
+		document.getElementById('200').disabled = true;
+	}
+
+	document.getElementById("300").addEventListener("click", myFunction2);
+	function myFunction2() {
+		document.getElementById('300').innerHTML = "Ticket Bought";
+		document.getElementById('300').disabled = true;
+	}
+</script>
+			<button type="button" class="button">Check the Winner</button>
+	</div>
+  
+</section>
+	
+<section id="FAQ">
+		<div class="col-lg-8 mx-auto">
+				<h1>FAQ</h1>
+				<br>
+				<br>
+				<h4><u><strong>* What is Infinity?</strong></u></h4>
+				<p class="lead">Infinity is a lottery built on top of the Ethereum blockchain. Because of its decentralized nature, Infinity is completely controlled by the blockchain, so payments and ticket-buying is secured with the power of millions of computers around the world.</p>
+
+				<h4><u><strong>* How can I use Infinity?</strong></u></h4>
+				<p class="lead">The easiest way to use Infinity is to download the Metamask wallet <a href="https://metamask.io">here</a>, send your Metamask wallet some ether using an exchange of sorts, and choosing a ticket to buy at the top of the page.</p>
+
+				<h4><u><strong>* My transaction isn't going through. Why?</strong></u></h4>
+				<p class="lead">Try raising your gas limit for the transaction. Don't worry if it seems high; most of the times, the gas limit isn't even reached. Also, it's possible that someone else just bought the ticket that you clicked on and the website or blockchain didn't update yet. Try choosing a different ticket.</p>
+
+				<h4><u><strong>* Why so few tickets?</strong></u></h4>
+				<p class="lead">Fewer tickets equals to faster games, which means less time waiting to see if you've won! The game resets automatically too, so you can play more games quicker.</p>
+
+				<h4><u><strong>* What's your share?</strong></u></h4>
+				<p class="lead">Nothing! All of the ether raised by tickets goes to the winners. </p>
+		</div>
+</section>
+
+<section id="contact">
+	<div class="login-form">
+		<h2 style="text-align: center;"><u>Get in touch with Us</u></h2>
+		<p>Feel free to drop us a line and we'll get back to you in 24 hours!</p>
+			<span></span>
+		<form>
+			<h4>Your Name</h4>
+			<input type="text"  placeholder="First Name & Last Name" required=""><br>
+			<h4>Your Phone Number</h4>
+			<input type="text"  placeholder="0900.234.145678" ><br>
+			<h4>Your Email Address</h4>
+			<input type="text"  placeholder="example@mail.com"><br>
+			<h4>Your Feedback</h4>
+			<textarea  placeholder="Message"></textarea><br><br><br>
+			<input class="button" type="submit" formaction="./y.html" value="Shoot">
+		</form>
+	</div>
+
+</section>	
+	  
+</body>
+</html>
+
